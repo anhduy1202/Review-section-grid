@@ -2,16 +2,16 @@
 @import "mixins";
 
 html {
+    @include breakpoint-down(medium) {
+        scroll-behavior: smooth;
+        overflow:auto;
+        }
     
     height:100vh;
     font-size:100%;
     box-sizing: border-box;
     overflow:hidden;
-    @include breakpoint-down(medium) {
-
-        overflow:auto;
-        }
-    
+  
 }
 *, *::before, *::after {
     box-sizing: inherit;
