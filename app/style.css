@@ -1,10 +1,16 @@
 html {
-  overflow-x: hidden;
   height: 100vh;
   font-size: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  overflow: auto;
+  overflow: hidden;
+}
+
+@media (max-width: 63.9375em) {
+  html {
+    scroll-behavior: smooth;
+    overflow: auto;
+  }
 }
 
 *, *::before, *::after {
@@ -16,11 +22,18 @@ body {
   font-size: 0.8125rem;
   height: 100vh;
   padding: 0;
-  margin: 4.375rem 0 4.375rem 0;
+  margin: 0;
   font-family: "Barlow Semi Condensed", sans-serif;
   line-height: 1rem;
   background: #ecf2f8;
-  overflow: auto;
+  overflow: hidden;
+}
+
+@media (max-width: 63.9375em) {
+  body {
+    scroll-behavior: smooth;
+    overflow: auto;
+  }
 }
 
 .grid {
