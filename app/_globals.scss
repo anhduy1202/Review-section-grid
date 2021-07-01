@@ -6,21 +6,32 @@ html {
     height:100vh;
     font-size:100%;
     box-sizing: border-box;
-    overflow:auto;
+    overflow:hidden;
+    @include breakpoint-down(medium) {
+
+        overflow-y:auto;
+        }
+    
 }
 *, *::before, *::after {
     box-sizing: inherit;
 }
 
 body {
+    @include breakpoint-down(medium) {
+scroll-behavior: smooth;
+        overflow-y:auto;
+        }
 font-size: $font-md;
 height: 100vh;
 padding:0;
-margin:4.375rem 0 4.375rem 0 ;
+margin:0;
+
 font-family: $Barlow;
 line-height: 1rem;
 background: $lightGrayishBlue;
-overflow:auto;
+overflow:hidden;
+
 }
 
 .grid {
