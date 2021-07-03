@@ -18,7 +18,7 @@ row-gap: 1.9375rem;
 @include breakpoint-down(medium) {
 
     width: 20.8125rem;
-max-height: 48.625rem;
+
 grid-template-columns: 1fr;
 grid-template-row : repeat(5,1fr);
 grid-template-areas:   
