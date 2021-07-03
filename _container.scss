@@ -1,0 +1,207 @@
+
+
+@import "variables";
+@import "mixins";
+.container {
+width: 70.5rem;
+max-height: 35.975rem;
+transform: scale(0.96);
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+    
+    "box1 box1 box2 box3"
+    "box4 box5 box5 box3";
+
+column-gap: 1.9375rem;
+row-gap: 1.9375rem;
+
+@include breakpoint-down(medium) {
+
+    width: 20.8125rem;
+max-height: 48.625rem;
+grid-template-columns: 1fr;
+grid-template-row : repeat(5,1fr);
+grid-template-areas:   
+"box1"
+"box2"
+"box4"
+"box5"
+"box3";
+row-gap: 2.0625rem;
+}
+
+}
+
+
+.box1 {
+    
+    padding:1rem 2.25rem 2.25rem 2.25rem;
+grid-area: box1;
+    background: $moderateViolet;
+    
+
+    &-bio {
+        position: relative;
+        z-index: 10;
+        padding-top: 1rem;
+        padding-bottom: 1.875rem;
+line-height: 1.35rem;
+        color: $white;
+        font-size: $font-lg;
+    }
+
+    &-quote {
+        color: $white;
+        opacity: 50%;
+
+    }
+    .Daniel{
+       
+        transform: scale(0.7);
+        border-radius: 50%;
+        
+    }
+
+    .quotation {
+       position: absolute;
+       transform: translate(300%,-15%);
+       z-index: 0;
+       @include breakpoint-down(medium) {
+        transform: translate(160%,-15%);
+
+       }
+    }
+
+   
+    
+}
+
+
+
+.wrapper {
+    padding-left: 1rem;
+    &-name {
+        color:$white;
+    }
+    &-position {
+        color: $white;
+        opacity: 50%;
+        }
+}
+
+
+
+
+.box2 {
+    padding:1rem 2.25rem 2.25rem 2.25rem;
+grid-area: box2;
+    background: $veryDarkGrayishBlue;
+    
+    &-bio {
+        padding-top: 1rem;
+        padding-bottom: 1.875rem;
+line-height: 1.35rem;
+        color: $white;
+        font-size: $font-lg;
+    }
+
+    &-quote {
+        color: $white;
+        opacity: 50%;
+
+    }
+    img {
+        transform: scale(0.7);
+        border-radius: 50%;
+    }
+}
+
+.wrapper_box {
+    padding-left: 1rem;
+    &-name {
+        color:$veryDarkGrayishBlue;
+    }
+    &-position {
+        color: $veryDarkGrayishBlue;
+        opacity: 50%;
+        }
+
+}
+.box3 {
+    
+    padding:1rem 2.25rem 2.25rem 2.25rem;
+    grid-area: box3;
+background: $white;
+box-shadow: 48px 45px 50px -50px $lightGray;
+
+&-bio {
+    padding-top: 1rem;
+padding-bottom: 1.575rem;
+line-height: 1.35rem;
+    color: $veryDarkGrayishBlue;
+    font-size: $font-lg;
+    
+}
+
+&-quote {
+    color: $veryDarkGrayishBlue;
+    opacity: 50%;
+
+}
+img {
+    transform: scale(0.7);
+    border-radius: 50%;
+}
+
+}
+
+.box4{
+    padding:1rem 2.25rem 2.25rem 2.25rem;
+    grid-area: box4;;
+background: $white;
+box-shadow: 38px 35px 20px -40px $lightGray;
+&-bio {
+    padding-top: 1rem;
+padding-bottom: 1.175rem;
+line-height: 1.35rem;
+    color: $veryDarkGrayishBlue;
+    font-size: $font-lg;
+    
+}
+
+&-quote {
+    color: $veryDarkGrayishBlue;
+    opacity: 50%;
+
+}
+img {
+    transform: scale(0.7);
+    border-radius: 50%;
+}
+}
+
+.box5 {
+grid-area: box5;
+background:$veryDarkBlackishBlue;
+padding:1rem 2.25rem 2.25rem 2.25rem;
+box-shadow: 0px 15px 40px -30px $lightGray;
+
+&-bio {
+padding-top: 1rem;
+padding-bottom: 1.175rem;
+line-height: 1.35rem;
+color: $white;
+font-size: $font-lg;
+
+}
+
+&-quote {
+color: $white;
+opacity: 50%;
+
+}
+img {
+    transform: scale(0.7);
+    border-radius: 50%;
+}
+}
