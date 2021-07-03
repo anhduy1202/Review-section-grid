@@ -4,7 +4,7 @@
 @import "mixins";
 .container {
 width: 70.5rem;
-height: 35.975rem;
+max-height: 35.975rem;
 transform: scale(0.96);
     grid-template-columns: repeat(4,1fr);
     grid-template-areas: 
@@ -18,7 +18,7 @@ row-gap: 1.9375rem;
 @include breakpoint-down(medium) {
 
     width: 20.8125rem;
-height: 48.625rem;
+
 grid-template-columns: 1fr;
 grid-template-row : repeat(5,1fr);
 grid-template-areas:   
